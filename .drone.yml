@@ -2,7 +2,7 @@ kind: pipeline
 name: default
 steps:
 -      name: build
-       image:  node
+       image:  plugins/docker
        commands: 
        -  "docker build -t node ."
        when:
