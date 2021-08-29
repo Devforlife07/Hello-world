@@ -2,10 +2,10 @@ kind: pipeline
 name: default
 type: build
 steps:
--      name: build
-       image:  plugins/docker
-       commands: 
-       -  "docker build -t node ."
-       when:
-          branch:
-              -   master
+  - name: build
+    image: plugins/docker
+    script:
+      - docker build -t node .
+    when:
+      branch:
+        - master
