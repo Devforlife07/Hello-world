@@ -1,7 +1,7 @@
 kind: pipeline
 name: default
 steps:
-       name: build
+-      name: build
        image:  plugins/ecr-
        when:
           branch:
