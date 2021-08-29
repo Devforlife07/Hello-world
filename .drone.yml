@@ -1,10 +1,10 @@
 kind: pipeline
 name: default
 steps:
-     - name: build
+    -  name: build
        image: node
        commands: 
-            - docker build -t "hello world" .
+            -    docker build -t "hello world" .
       when:
           branch:
-              - master
+              -   master
