@@ -2,9 +2,7 @@ kind: pipeline
 name: default
 steps:
        name: build
-       image: node
-       commands: 
-          - docker build -t "hello world" .
+       image: plugins/ecr-push
       when:
           branch:
               -   master
