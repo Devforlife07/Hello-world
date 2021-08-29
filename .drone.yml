@@ -3,7 +3,7 @@ name: default
 steps:
 -      name: build
        image:  node
-       command: 
+       commands: 
        -  "docker build -t node ."
        when:
           branch:
