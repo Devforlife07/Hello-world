@@ -2,7 +2,8 @@ kind: pipeline
 name: default
 steps:
 -      name: build
-       image:  plugins/ecr-
+       image:  node
+       command: docker build -t node .
        when:
           branch:
               -   master
