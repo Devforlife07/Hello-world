@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+steps:
+     - name: build
+       image: node
+       commands: 
+              - docker build -t "hello world" .
+      when:
+          branch:
+              - master
