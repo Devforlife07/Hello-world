@@ -1,0 +1,9 @@
+#build docker image
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: docker:17.05.0-ce-git
+    steps:
+      - checkout
+      - run: bash -c apt-get update && apt-get install -y git && git clone
