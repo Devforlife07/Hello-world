@@ -1,5 +1,5 @@
 version: 2.1
-workfloes:
+workflows:
   my-workflow:
     jobs:
       build-and-test:
