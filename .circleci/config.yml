@@ -1,7 +1,9 @@
-#build docker image
 version: 2.1
-jobs:
-  build:
-    docker:
-      - image: docker:17.05.0-ce-git
-        command: bash -c "apt-get update && apt-get install -y git && git clone
+workfloes:
+  my-workflow:
+    jobs:
+      build-and-test:
+        context: my-context
+        steps:
+          - checkout
+          - run: echo $SECRET
