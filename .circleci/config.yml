@@ -6,4 +6,6 @@ workflows:
         context: my-context
         steps:
           - checkout
-          - run: echo $SECRET
+          - run:
+              name: echo $SECRET
+              command: echo $SECRET
