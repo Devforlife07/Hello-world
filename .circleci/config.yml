@@ -8,9 +8,9 @@ workflows:
 jobs:
   build-and-test:
     machine:
-    image: ubuntu-2004:202107-02
+      image: ubuntu-2004:202107-02
     steps:
       - checkout
       - run:
           name: echo $SECRET
-          command: echo $SECRETs
+          command: echo $SECRET
