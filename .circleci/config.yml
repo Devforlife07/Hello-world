@@ -2,10 +2,10 @@ version: 2.1
 workflows:
   my-workflow:
     jobs:
-      build-and-test:
-        context: my-context
-        steps:
-          - checkout
-          - run:
-              name: echo $SECRET
-              command: echo $SECRET
+      - build-and-test:
+          context: my-context
+          steps:
+            - checkout
+            - run:
+                name: echo $SECRET
+                command: echo $SECRET
