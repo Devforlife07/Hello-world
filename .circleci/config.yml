@@ -4,8 +4,11 @@ workflows:
     jobs:
       - build-and-test:
           context: my-context
-          steps:
-            - checkout
-            - run:
-                name: echo $SECRET
-                command: echo $SECRET
+
+jobs:
+  build-and-test:
+    steps:
+      - checkout
+      - run:
+          name: echo $SECRET
+          command: echo $SECRETs
